@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>ENEM Inteligente - Sua Preparação Completa para o ENEM</title>
+<style>
+  /* Reset básico */
+  * {
+    margin: 0; padding: 0; box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  body {
+    background: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+  }
+  header {
+    background-color: #004d99;
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  header img {
+    height: 50px;
+  }
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.2rem;
+  }
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+  }
+  nav a:hover {
+    color: #ffcc00;
+  }
+  .search-box {
+    position: relative;
+  }
+  .search-box input[type="search"] {
+    padding: 0.4rem 0.8rem;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    width: 200px;
+    transition: width 0.3s ease;
+  }
+  .search-box input[type="search"]:focus {
+    width: 280px;
+  }
+
+  main {
+    max-width: 1100px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+  }
+  #inicio {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  #inicio h1 {
+    font-size: 2.8rem;
+    color: #004d99;
+    margin-bottom: 0.5rem;
+  }
+  #inicio p {
+    font-size: 1.2rem;
+    color: #666;
+  }
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 1.5rem;
+  }
+  .card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgb(0 0 0 / 0.2);
+  }
+  .card h3 {
+    margin-bottom: 0.8rem;
+    color: #004d99;
+  }
+  .card p {
+    color: #444;
+    font-size: 1rem;
+  }
+
+  footer {
+    background-color: #222;
+    color: #ccc;
+    text-align: center;
+    padding: 1.5rem 1rem;
+    margin-top: 3rem;
+  }
+  footer a {
+    color: #ffcc00;
+    text-decoration: none;
+  }
+  footer a:hover {
+    text-decoration: underline;
+  }
+
+  /* Responsividade */
+  @media(max-width: 700px) {
+    nav ul {
+      flex-direction: column;
+      gap: 0.6rem;
+      margin-top: 1rem;
+    }
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .search-box input[type="search"] {
+      width: 100%;
+    }
+  }
+</style>
+</head>
+<body>
+<header>
+  <img src="enem.png" alt="Logo ENEM Inteligente" />
+  <div class="search-box">
+    <input type="search" placeholder="Buscar matéria ou conteúdo..." aria-label="Buscar conteúdo ENEM" />
+  </div>
+</header>
+
+<main>
+  <section id="inicio">
+    <h1>Bem-vindo ao ENEM Inteligente!</h1>
+    <p>Aqui você encontra tudo para se preparar para o ENEM com qualidade e eficiência.</p>
+  </section>
+  <section class="cards" aria-label="Seções principais do ENEM">
+    <a href="linguagens.html" class="card" tabindex="0">
+      <h3>Linguagens e Códigos</h3>
+      <p>Revisão completa das principais matérias e dicas para gabaritar.</p>
+    </a>
+    <a href="humanas.html" class="card" tabindex="0">
+      <h3>Ciências Humanas</h3>
+      <p>Conteúdos atualizados e simulados para História, Geografia, Filosofia e Sociologia.</p>
+    </a>
+    <a href="natureza.html" class="card" tabindex="0">
+      <h3>Ciências da Natureza</h3>
+      <p>Estude Física, Química e Biologia com materiais de qualidade.</p>
+    </a>
+    <a href="matematica.html" class="card" tabindex="0">
+      <h3>Matemática</h3>
+      <p>Resumos, exercícios e dicas para melhorar seu desempenho.</p>
+    </a>
+    <a href="redacao.html" class="card" tabindex="0">
+      <h3>Redação</h3>
+      <p>Modelos, temas e correções para você escrever a melhor redação.</p>
+    </a>
+    <a href="simulado.html" class="card" tabindex="0">
+      <h3>Simulados</h3>
+      <p>Testes com correção para você praticar e se preparar.</p>
+    </a>
+  </section>
+  
+</main>
+
+<footer>
+  <p>&copy; 2025 ENEM Inteligente | <a href="contato.html">Contato</a></p>
+</footer>
+</body>
+</html>

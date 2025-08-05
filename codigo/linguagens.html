@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ENEM Inteligente - Linguagens</title>
+    <style>
+        /* Reset básico */
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+        }
+    
+        body {
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          background-color: #f8f9fb;
+          color: #222;
+          line-height: 1.6;
+          min-height: 100vh;
+          display: flex;
+          flex-direction: column;
+        }
+    
+        /* Cabeçalho */
+        header {
+          background-color: #004aad;
+          padding: 15px 30px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          flex-wrap: wrap;
+          color: white;
+        }
+    
+        header img {
+          height: 50px;
+        }
+    
+        header input[type="text"] {
+          padding: 8px 12px;
+          border-radius: 6px;
+          border: none;
+          font-size: 1rem;
+          width: 280px;
+          max-width: 100%;
+        }
+    
+        nav ul {
+          list-style: none;
+          display: flex;
+          gap: 18px;
+          flex-wrap: wrap;
+          margin-top: 10px;
+        }
+    
+        nav ul li a {
+          color: white;
+          text-decoration: none;
+          font-weight: 600;
+          font-size: 1rem;
+          transition: color 0.3s;
+        }
+    
+        nav ul li a:hover {
+          color: #ffd600;
+        }
+    
+        /* Conteúdo principal */
+        section#matematica-section {
+          max-width: 900px;
+          background: white;
+          margin: 40px auto;
+          padding: 35px 45px;
+          border-radius: 12px;
+          box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+          flex-grow: 1;
+        }
+    
+        h2 {
+          color: #004aad;
+          font-size: 1.8rem;
+          margin-bottom: 20px;
+          border-bottom: 3px solid #004aad;
+          padding-bottom: 6px;
+        }
+    
+        p {
+          font-size: 1.1rem;
+          margin-bottom: 30px;
+          text-align: justify;
+          color: #333;
+        }
+    
+        ul {
+          margin-left: 20px;
+          margin-bottom: 35px;
+        }
+    
+        ul li {
+          font-size: 1.05rem;
+          margin-bottom: 10px;
+          line-height: 1.5;
+          color: #444;
+          position: relative;
+          padding-left: 15px;
+        }
+    
+        /* Custom bullet */
+        ul li::before {
+          content: "•";
+          color: #004aad;
+          position: absolute;
+          left: 0;
+          font-weight: bold;
+          font-size: 1.2rem;
+          line-height: 1;
+        }
+    
+        /* Rodapé */
+        footer {
+          background-color: #004aad;
+          color: white;
+          text-align: center;
+          padding: 18px 10px;
+          font-size: 1rem;
+          border-top: 4px solid #003077;
+          margin-top: 40px;
+        }
+    
+        /* Responsividade */
+        @media (max-width: 768px) {
+          header {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 12px;
+          }
+    
+          nav ul {
+            flex-direction: column;
+            gap: 12px;
+            width: 100%;
+          }
+    
+          header input[type="text"] {
+            width: 100%;
+          }
+    
+          section#matematica-section {
+            margin: 20px 15px;
+            padding: 25px 20px;
+          }
+    
+          h2 {
+            font-size: 1.5rem;
+          }
+    
+          ul li {
+            font-size: 1rem;
+          }
+        }
+      </style>
+    </style>
+</head>
+<body>
+    <header>
+        <img src="enem.png" alt="Logo ENEM Inteligente">
+        <input type="text" placeholder="Buscar matéria ou conteúdo...">
+        <nav>
+            <ul>
+                <li><a href="inicio.html">Início</a></li>
+                <li><a href="linguagens.html">Linguagens</a></li>
+                <li><a href="humanas.html">Humanas</a></li>
+                <li><a href="natureza.html">Natureza</a></li>
+                <li><a href="matematica.html">Matemática</a></li>
+                <li><a href="redacao.html">Redação</a></li>
+                <li><a href="simulado.html">Simulados</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="linguagens-section">
+        <h1>Linguagens, Códigos e suas Tecnologias</h1>
+
+        <article>
+            <h2>Interpretação de Textos</h2>
+            <p>Essencial para o ENEM. Envolve leitura, compreensão, identificação de ideias principais e secundárias, inferência e reconhecimento de tipos e gêneros textuais.</p>
+        </article>
+
+        <article>
+            <h2>Gramática</h2>
+            <ul>
+                <li>Fonética e Fonologia (ortografia, acentuação).</li>
+                <li>Morfologia (classes de palavras, flexões).</li>
+                <li>Sintaxe (concordância, regência, colocação pronominal).</li>
+                <li>Semântica (significados e figuras de linguagem).</li>
+            </ul>
+        </article>
+
+        <article>
+            <h2>Variações Linguísticas</h2>
+            <p>Compreende o uso da linguagem em diferentes contextos: norma culta, coloquial, regionalismos, gírias e combate ao preconceito linguístico.</p>
+        </article>
+
+        <article>
+            <h2>Funções da Linguagem</h2>
+            <p>Referencial, emotiva, conativa, fática, metalinguística e poética — cada uma com foco comunicativo diferente.</p>
+        </article>
+
+        <article>
+            <h2>Gêneros Textuais</h2>
+            <p>Reconhecimento e interpretação de textos como notícias, artigos de opinião, crônicas, poemas, charges e mais.</p>
+        </article>
+
+        <article>
+            <h2>Coesão e Coerência Textual</h2>
+            <p>Mecanismos que garantem a ligação entre ideias e a lógica do texto.</p>
+        </article>
+
+        <article>
+            <h2>Literatura</h2>
+            <ul>
+                <li>Escolas Literárias: Quinhentismo ao Contemporâneo.</li>
+                <li>Características, autores e obras principais de cada período.</li>
+                <li>Relações entre literatura, sociedade e história.</li>
+            </ul>
+        </article>
+
+        <article>
+            <h2>Língua Estrangeira (Inglês ou Espanhol)</h2>
+            <ul>
+                <li>Interpretação de textos diversos.</li>
+                <li>Vocabulário e gramática básica.</li>
+                <li>Compreensão geral do conteúdo textual.</li>
+            </ul>
+        </article>
+
+        <article>
+            <h2>Artes</h2>
+            <ul>
+                <li>História da arte: do pré-histórico ao contemporâneo.</li>
+                <li>Manifestações artísticas como pintura, música, cinema, dança e escultura.</li>
+                <li>Interpretação e contextualização de obras.</li>
+            </ul>
+        </article>
+
+        <article>
+            <h2>Educação Física</h2>

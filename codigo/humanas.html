@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Ciências Humanas | ENEM Inteligente</title>
+</head>
+<body>
+  <header>
+    <img src="enem.png" alt="Logo ENEM Inteligente" />
+    <input type="text" placeholder="Buscar matéria ou conteúdo..." />
+    <style>
+      /* Reset básico */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+  
+      body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f8f9fb;
+        color: #222;
+        line-height: 1.6;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+  
+      /* Cabeçalho */
+      header {
+        background-color: #004d99;
+        padding: 15px 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        color: white;
+      }
+  
+      header img {
+        height: 50px;
+      }
+  
+      header input[type="text"] {
+        padding: 8px 12px;
+        border-radius: 6px;
+        border: none;
+        font-size: 1rem;
+        width: 280px;
+        max-width: 100%;
+      }
+  
+      nav ul {
+        list-style: none;
+        display: flex;
+        gap: 18px;
+        flex-wrap: wrap;
+        margin-top: 10px;
+      }
+  
+      nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 1rem;
+        transition: color 0.3s;
+      }
+  
+      nav ul li a:hover {
+        color: #ffd600;
+      }
+  
+      /* Conteúdo principal */
+      section#matematica-section {
+        max-width: 900px;
+        background: white;
+        margin: 40px auto;
+        padding: 35px 45px;
+        border-radius: 12px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        flex-grow: 1;
+      }
+  
+      h2 {
+        color: #004aad;
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+        border-bottom: 3px solid #004aad;
+        padding-bottom: 6px;
+      }
+  
+      p {
+        font-size: 1.1rem;
+        margin-bottom: 30px;
+        text-align: justify;
+        color: #333;
+      }
+  
+      ul {
+        margin-left: 20px;
+        margin-bottom: 35px;
+      }
+  
+      ul li {
+        font-size: 1.05rem;
+        margin-bottom: 10px;
+        line-height: 1.5;
+        color: #444;
+        position: relative;
+        padding-left: 15px;
+      }
+  
+      /* Custom bullet */
+      ul li::before {
+        content: "•";
+        color: #004d99;
+        position: absolute;
+        left: 0;
+        font-weight: bold;
+        font-size: 1.2rem;
+        line-height: 1;
+      }
+  
+      /* Rodapé */
+      footer {
+        background-color: #004d99;
+        color: white;
+        text-align: center;
+        padding: 18px 10px;
+        font-size: 1rem;
+        border-top: 4px solid #004d99;
+        margin-top: 40px;
+      }
+  
+      /* Responsividade */
+      @media (max-width: 768px) {
+        header {
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 12px;
+        }
+  
+        nav ul {
+          flex-direction: column;
+          gap: 12px;
+          width: 100%;
+        }
+  
+        header input[type="text"] {
+          width: 100%;
+        }
+  
+        section#matematica-section {
+          margin: 20px 15px;
+          padding: 25px 20px;
+        }
+  
+        h2 {
+          font-size: 1.5rem;
+        }
+  
+        ul li {
+          font-size: 1rem;
+        }
+      }
+    </style>
+    <nav>
+      <ul>
+        <li><a href="inicio.html">Início</a></li>
+        <li><a href="linguagens.html">Linguagens</a></li>
+        <li><a href="humanas.html">Humanas</a></li>
+        <li><a href="natureza.html">Natureza</a></li>
+        <li><a href="matematica.html">Matemática</a></li>
+        <li><a href="redacao.html">Redação</a></li>
+        <li><a href="simulado.html">Simulados</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="humanas-section">
+    <h1>Ciências Humanas e suas Tecnologias</h1>
+    <p>
+      A área de Ciências Humanas do ENEM abrange conhecimentos de História, Geografia, Filosofia e Sociologia, abordando aspectos políticos, culturais, econômicos e sociais. Veja abaixo os principais conteúdos cobrados:
+    </p>
+
+    <section>
+      <h2>História</h2>
+      <h3>História do Brasil</h3>
+      <ul>
+        <li>Brasil Colônia: capitanias hereditárias, economia açucareira, escravidão e contato com indígenas</li>
+        <li>Segundo Reinado: crise da escravidão e Guerra do Paraguai</li>
+        <li>República Velha: oligarquias, Canudos e Contestado</li>
+        <li>Era Vargas: política, economia e sociedade</li>
+        <li>Ditadura Militar: golpe de 1964, repressão e economia</li>
+        <li>Patrimônio histórico e cultural</li>
+      </ul>
+
+      <h3>História Geral</h3>
+      <ul>
+        <li>Antiguidade Clássica: Grécia e Roma</li>
+        <li>Idade Média: feudalismo, cruzadas, renascimento urbano e comercial</li>
+        <li>Idade Moderna: renascimento cultural, reformas religiosas, iluminismo</li>
+        <li>Século XX: guerras mundiais, guerra fria, nazifascismo</li>
+        <li>Neocolonialismo</li>
+      </ul>
+
+      <h3>Temas Transversais</h3>
+      <ul>
+        <li>História e cultura indígena e afro-brasileira</li>
+        <li>Movimentos sociais e resistência</li>
+        <li>Memória, identidade e patrimônio</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Geografia</h2>
+      <h3>Geografia Física</h3>
+      <ul>
+        <li>Climas e mudanças climáticas</li>
+        <li>Relevo brasileiro</li>
+        <li>Recursos hídricos e bacias hidrográficas</li>
+        <li>Biomas e conservação ambiental</li>
+        <li>Problemas ambientais: poluição, desmatamento, sustentabilidade</li>
+      </ul>
+
+      <h3>Geografia Humana</h3>
+      <ul>
+        <li>Urbanização: mobilidade, segregação e problemas urbanos</li>
+        <li>Agricultura: modelos de produção, reforma agrária, agronegócio</li>
+        <li>Indústria: localização e desenvolvimento industrial</li>
+        <li>Demografia: estrutura etária, migração, crescimento populacional</li>
+        <li>Geopolítica: conflitos, globalização, organizações internacionais</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Filosofia</h2>
+      <ul>
+        <li>Filosofia Antiga: Sócrates, Platão, Aristóteles e os sofistas</li>
+        <li>Filosofia Moderna: racionalismo (Descartes), empirismo (Locke, Hume), iluminismo</li>
+        <li>Contratualismo: Hobbes, Locke, Rousseau</li>
+        <li>Filosofia Contemporânea: Nietzsche, Sartre, Escola de Frankfurt, Foucault</li>
+        <li>Ética, política e teoria do conhecimento</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Sociologia</h2>
+      <ul>
+        <li>Cultura: diversidade, etnocentrismo, relativismo e cultura de massa</li>
+        <li>Movimentos sociais: lutas por igualdade, ambientalismo, movimentos de base</li>
+        <li>Estado e cidadania: direitos, deveres e participação política</li>
+        <li>Desigualdade social e relações raciais no Brasil</li>
+        <li>Temas contemporâneos: globalização, tecnologia e sociedade</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 ENEM Inteligente. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
