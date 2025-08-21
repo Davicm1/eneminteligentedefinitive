@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contato | ENEM Inteligente</title>
+  <style>
+    /* Reset básico */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f7fb;
+      color: #222;
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Cabeçalho */
+    header {
+      background-color: #004aad;
+      padding: 15px 30px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      color: white;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    header img {
+      height: 50px;
+    }
+
+    header input[type="text"] {
+      padding: 8px 12px;
+      border-radius: 6px;
+      border: none;
+      font-size: 1rem;
+      width: 280px;
+      max-width: 100%;
+      transition: box-shadow 0.3s;
+    }
+
+    header input[type="text"]:focus {
+      outline: none;
+      box-shadow: 0 0 8px #ffd600;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 18px;
+      flex-wrap: wrap;
+      margin-top: 10px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #ffd600;
+    }
+
+    /* Conteúdo principal */
+    main {
+      max-width: 700px;
+      background: white;
+      margin: 40px auto;
+      padding: 35px 45px;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      flex-grow: 1;
+      text-align: center;
+    }
+
+    main h2 {
+      color: #004aad;
+      font-size: 2rem;
+      margin-bottom: 25px;
+      border-bottom: 3px solid #004aad;
+      padding-bottom: 10px;
+      font-weight: 700;
+    }
+
+    main p {
+      font-size: 1.1rem;
+      margin-bottom: 30px;
+      color: #333;
+    }
+
+    main h3, main h2.contacts-email {
+      color: #222;
+      font-weight: 600;
+      font-size: 1.3rem;
+      margin-bottom: 18px;
+      word-wrap: break-word;
+      background: #e6f0ff;
+      padding: 12px 20px;
+      border-radius: 8px;
+      border: 1px solid #a1c1ff;
+      user-select: all;
+      cursor: text;
+      transition: background-color 0.3s;
+      max-width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    main h3:hover, main h2.contacts-email:hover {
+      background-color: #c6ddff;
+    }
+
+    /* Rodapé */
+    footer {
+      background-color: #004aad;
+      color: white;
+      text-align: center;
+      padding: 18px 10px;
+      font-size: 1rem;
+      border-top: 4px solid #003077;
+      margin-top: 40px;
+    }
+
+    /* Responsividade */
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+      }
+
+      nav ul {
+        flex-direction: column;
+        gap: 12px;
+        width: 100%;
+      }
+
+      header input[type="text"] {
+        width: 100%;
+      }
+
+      main {
+        margin: 20px 15px;
+        padding: 25px 20px;
+      }
+
+      main h2 {
+        font-size: 1.6rem;
+      }
+
+      main h3, main h2.contacts-email {
+        font-size: 1.1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="enem.png" alt="Logo ENEM Inteligente" />
+    <input type="text" placeholder="Buscar matéria ou conteúdo..." />
+    <nav>
+      <ul>
+        <li><a href="inicio.html">Início</a></li>
+        <li><a href="linguagens.html">Linguagens</a></li>
+        <li><a href="humanas.html">Humanas</a></li>
+        <li><a href="natureza.html">Natureza</a></li>
+        <li><a href="matematica.html">Matemática</a></li>
+        <li><a href="redacao.html">Redação</a></li>
+        <li><a href="simulado.html">Simulados</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Contatos dos Desenvolvedores</h2>
+      <p>Para casos de suporte ou sugestão, os contatos são:</p>
+      <h2 class="contacts-email">0000112978227xsp@al.educacao.sp.gov.br</h2>
+      <h2 class="contacts-email">00001128724078sp@al.educacao.sp.gov.br</h2>
+      <h2 class="contacts-email">00001132142362sp@al.educacao.sp.gov.br</h2>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 ENEM Inteligente</p>
+  </footer>
+</body>
+</html>

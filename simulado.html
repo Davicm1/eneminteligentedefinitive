@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Simulados | ENEM Inteligente</title>
+  <style>
+    /* Reset básico */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+     body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f5f7fa;
+      color: #333;
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    /* Cabeçalho */
+    header {
+       background-color: #004aad;
+      padding: 15px 30px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      color: white;
+    }
+
+    header img {
+      height: 50px;
+    }
+
+    header input[type="text"] {
+     padding: 8px 12px;
+      border: none;
+      border-radius: 5px;
+      width: 280px;
+      max-width: 100%;
+      font-size: 1rem;
+    }
+
+  
+    nav ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-top: 10px;
+    }
+
+    nav ul li a {
+     color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+      font-size: 1rem;;
+    }
+
+    nav ul li a:hover {
+      color: #ffd600;
+    }
+
+    /* Conteúdo principal */
+    section#section-simulado {
+      max-width: 900px;
+      background: white;
+      margin: 40px auto;
+      padding: 35px 45px;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      flex-grow: 1;
+    }
+
+    h2 {
+      color: #004aad;
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+      border-bottom: 3px solid #004aad;
+      padding-bottom: 6px;
+    }
+
+    ul {
+    margin: 10px 0 25px 20px;
+    }
+
+    ul li {
+     margin-bottom: 8px;
+      font-size: 1.05rem;
+    }
+
+    ul li strong {
+      color: #004aad;
+    }
+
+    /* Bullet customizado */
+    ul li::before {
+      content: "•";
+      color: #ffd600;
+      position: absolute;
+      left: 0;
+      font-weight: bold;
+      font-size: 1.3rem;
+      line-height: 1;
+    }
+
+    /* Links nos itens da lista */
+    ul li a {
+      color: #004aad;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    ul li a:hover {
+      color: #ffbb00;
+      text-decoration: underline;
+    }
+
+    p {
+      font-size: 1.1rem;
+      margin-bottom: 25px;
+      color: #333;
+    }
+
+    /* Rodapé */
+    footer {
+      background-color: #004aad;
+      color: white;
+      text-align: center;
+      padding: 18px 10px;
+      font-size: 1rem;
+      border-top: 4px solid #003077;
+      margin-top: 40px;
+    }
+
+    /* Responsividade */
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+      }
+
+      nav ul {
+        flex-direction: column;
+        gap: 12px;
+        width: 100%;
+      }
+
+      header input[type="text"] {
+        width: 100%;
+      }
+
+      section#section-simulado {
+        margin: 20px 15px;
+        padding: 25px 20px;
+      }
+
+      h2 {
+        font-size: 1.5rem;
+      }
+
+      ul li {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="enem.png" alt="Logo ENEM Inteligente" />
+    <input type="text" placeholder="Buscar matéria ou conteúdo..." />
+    <nav>
+      <ul>
+        <li><a href="inicio.html">Início</a></li>
+        <li><a href="linguagens.html">Linguagens</a></li>
+        <li><a href="humanas.html">Humanas</a></li>
+        <li><a href="natureza.html">Natureza</a></li>
+        <li><a href="matematica.html">Matemática</a></li>
+        <li><a href="redacao.html">Redação</a></li>
+        <li><a href="simulado.html">Simulados</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="section-simulado">
+    <h2>Melhores Lugares para Fazer Simulado ENEM</h2>
+
+    <h2>Plataformas Online:</h2>
+    <ul>
+      <li><a href="https://brasilescola.uol.com.br/enem/simulados/" target="_blank"><strong>Brasil Escola</strong></a>: Oferece simulados completos e por área de conhecimento.</li>
+      <li><a href="https://cursoenemgratuito.com.br/simulados-enem/" target="_blank"><strong>Curso Enem Gratuito</strong></a>: Possui simulados rápidos com gabarito imediato e aulas de reforço.</li>
+      <li><a href="https://descomplica.com.br/enem/simulados/" target="_blank"><strong>Descomplica</strong></a>: Oferece simulados online e gratuitos, inclusive para o ENEM 2025.</li>
+      <li><a href="https://www.respostacerta.com.br/simulados-enem" target="_blank"><strong>Resposta Certa</strong></a>: Destaca-se por oferecer simulados gratuitos com nota TRI oficial.</li>
+      <li><a href="https://www.enemaction.com.br/" target="_blank"><strong>Enem Action</strong></a>: Plataforma completa com simulados e diagnóstico de desempenho.</li>
+      <li><a href="https://mesalva.com/" target="_blank"><strong>Me Salva!</strong></a>: Cursinho online renomado que também oferece simulados com correção TRI (pode requerer assinatura).</li>
+      <li><a href="https://www.estuda.com/" target="_blank"><strong>Estuda.com</strong></a>: Plataforma com vasto banco de questões, estatísticas detalhadas e simulados (pode requerer assinatura).</li>
+      <li><a href="https://geekiegames.com/" target="_blank"><strong>Geekie Games</strong></a>: Plataforma que oferece simulados com correção TRI e relatórios de desempenho (pode requerer cadastro).</li>
+      <li><a href="https://qgdoenem.com.br/" target="_blank"><strong>QG do Enem</strong></a>: Oferece simulados completos com correção comentada (pode requ_

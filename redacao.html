@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Redação | ENEM Inteligente</title>
+  <style>
+    /* Reset básico */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f5f7fa;
+      color: #333;
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Cabeçalho */
+    header {
+      background-color: #004aad;
+      padding: 15px 30px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      color: white;
+    }
+
+    header img {
+      height: 50px;
+    }
+
+    header input[type="text"] {
+      padding: 8px 12px;
+      border: none;
+      border-radius: 5px;
+      width: 280px;
+      max-width: 100%;
+      font-size: 1rem;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-top: 10px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+      font-size: 1rem;
+    }
+
+    nav ul li a:hover {
+      color: #ffd700;
+    }
+
+    /* Conteúdo principal */
+    main#redacao-section {
+      max-width: 900px;
+      margin: 30px auto;
+      background-color: white;
+      padding: 30px 40px;
+      border-radius: 10px;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+      flex-grow: 1;
+    }
+
+    h1 {
+      color: #004aad;
+      margin-bottom: 20px;
+      font-size: 2.2rem;
+      text-align: center;
+    }
+
+    h2 {
+      color: #004aad;
+      margin-top: 25px;
+      font-size: 1.6rem;
+      border-bottom: 2px solid #004aad;
+      padding-bottom: 6px;
+    }
+
+    h3 {
+      margin-top: 20px;
+      color: #0066cc;
+      font-size: 1.3rem;
+    }
+
+    p {
+    margin: 15px 0 25px;
+      font-size: 1.1rem;
+      text-align: justify;
+    }
+
+    ul {
+      margin: 10px 0 25px 20px;
+    }
+
+    ul li {
+      margin-bottom: 8px;
+      font-size: 1.05rem;
+    }
+
+    ul li strong {
+      color: #004aad;
+    }
+
+    /* Rodapé */
+    footer {
+      background-color: #004aad;
+      color: white;
+      text-align: center;
+      padding: 20px 10px;
+      font-size: 0.95rem;
+      border-top: 4px solid #003077;
+      margin-top: 40px;
+    }
+
+    /* Responsividade */
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+      }
+
+      nav ul {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+      }
+
+      header input[type="text"] {
+        width: 100%;
+      }
+
+      main#redacao-section {
+        margin: 20px 15px;
+        padding: 25px 20px;
+      }
+
+      h1 {
+        font-size: 1.8rem;
+      }
+
+      h2 {
+        font-size: 1.3rem;
+      }
+
+      h3 {
+        font-size: 1.1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="enem.png" alt="Logo ENEM Inteligente" />
+    <input type="text" placeholder="Buscar matéria ou conteúdo..." />
+    <nav>
+      <ul>
+        <li><a href="inicio.html">Início</a></li>
+        <li><a href="linguagens.html">Linguagens</a></li>
+        <li><a href="humanas.html">Humanas</a></li>
+        <li><a href="natureza.html">Natureza</a></li>
+        <li><a href="matematica.html">Matemática</a></li>
+        <li><a href="redacao.html">Redação</a></li>
+        <li><a href="simulado.html">Simulados</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="redacao-section">
+    <h1>Redação</h1>
+    <p>
+      A redação do ENEM exige do estudante a produção de um texto dissertativo-argumentativo sobre um tema de relevância social, com base em textos de apoio e repertório sociocultural. A seguir, você confere um guia passo a passo para construir uma redação nota 1000.
+    </p>
+
+    <section>
+      <h2>Como fazer uma boa redação para o ENEM</h2>
+      <p>Confira os principais passos para desenvolver uma redação eficiente:</p>
+
+      <h3>1. Entenda a proposta de redação</h3>
+      <ul>
+        <li>Leia com atenção o tema e os textos motivadores.</li>
+        <li>Identifique o problema central a ser discutido.</li>
+        <li>Reconheça o gênero textual: dissertativo-argumentativo, que exige uma tese clara e argumentação consistente.</li>
+      </ul>
+
+      <h3>2. Planeje seu texto</h3>
+      <ul>
+        <li><strong>Brainstorming:</strong> Liste ideias e conhecimentos relacionados ao tema.</li>
+        <li><strong>Selecione argumentos:</strong> Escolha 2 ou 3 ideias centrais para sustentar sua tese.</li>
+        <li><strong>Organize a estrutura:</strong>
+          <ul>
+            <li><strong>Introdução:</strong> Apresente o tema e a sua tese.</li>
+            <li><strong>Desenvolvimento:</strong> Explore os argumentos com explicações, dados, exemplos ou comparações (um parágrafo para cada argumento, preferencialmente).</li>
+            <li><strong>Conclusão:</strong> Retome a tese e apresente uma proposta de intervenção clara, detalhada e viável, respeitando os direitos humanos.</li>
+          </ul>
+        </li>
+      </ul>
+
+      <h3>3. Redija com clareza e coesão</h3>
+      <ul>
+        <li>Utilize conectivos para garantir fluidez entre as partes do texto.</li>
+        <li>Mantenha a objetividade e evite repetições desnecessárias.</li>
+        <li>Atente-se à norma culta da língua portuguesa.</li>
+      </ul>
+
+      <h3>4. Revise antes de finalizar</h3>
+      <ul>
+        <li>Verifique erros gramaticais, de pontuação e ortografia.</li>
+        <li>Releia a proposta e confira se todos os critérios foram atendidos.</li>
+        <li>Ajuste a proposta de intervenção, se necessário, para garantir clareza e detalhamento.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 ENEM Inteligente. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
